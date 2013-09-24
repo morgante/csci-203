@@ -101,6 +101,7 @@ read_file(const char *fname, unsigned char **doc, int *doc_len)
 	 1) turn all upper case letters into lower case ones
 	 2) turn any white-space character into a space character and, 
 	    shrink any n>1 consecutive whitespace characters to exactly 1 whitespace
+	 3) remove all spaces at the beginning and end
 
 	 When the procedure returns, the character array buf contains the newly 
      normalized string and the return value is the new length of the normalized string.
@@ -112,19 +113,44 @@ int
 normalize(unsigned char *buf,	/* The character array contains the string to be normalized*/
 					int len	    /* the size of the original character array */)
 {
-    /* your code here */
+    int i;
+    int j;
 
-    return 0;
+    for (i=j=0; i < len; i++) {
+    	if (isupper(buf[i])) {
+    		buf[j++] = tolower(buf[i]);
+    	} else if(isspace(buf[i])) {
+    		// only insert if not at beginning or end; and not consutive
+    		if ((i > 0) && (i < (len-1)) && !isspace(buf[i-1])) {
+    			buf[j++] = ' ';
+    		}
+    	} else {
+    		buf[j++] = buf[i];
+    	}
+    }
+    buf[j] = 0; // finished
 
-
+    return j;
 }
 
 int
 exact_match(const unsigned char *qs, int m, 
         const unsigned char *ts, int n)
 {
-    /* your code here */
-    return 0;
+	// first make sure they are the same length
+	if (m != n) {
+		return 0;
+	}
+
+	int i;
+	for (i=0; qs[i]; i++) {
+		if (qs[i] != ts[i]) {
+			return 0;
+		}
+    }
+
+    // we've passed all check thus far, so it must be okay
+    return 1;
 }
 
 /* check if a query string ps (of length k) appears 
