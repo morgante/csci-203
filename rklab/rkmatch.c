@@ -164,42 +164,20 @@ simple_substr_match(const unsigned char *ps,	/* the query string */
 						 const unsigned char *ts,	/* the document string (Y) */ 
 						 int n						/* the length of the document Y */)
 {
-
-	// this is the standard obvious way, yet even this doesn't work.... odd; well I give up
-	if(strstr(ts, ps)) {
-   		return 1;
-   	}
-
-	// iterate through all substrings of ts with length n
+	// iterate through all substrings of ts
 	int i;
 	int j;
-	for (i=j=0; i < n; i++) {
-		if (ts[i] == ps[j]) {
-			// if we've made it to the end, it's a full substring match
-			if(++j >= k) {
-				return 1;
+	for (i=0; i < n; i++) {
+		for (j=0; j < k; j++) {
+			if(ts[i+j] == ps[j]) {
+				if((j+1) == k) {
+					return 1;
+				}
+			} else {
+				break;
 			}
-		} else {
-			j = 0;
 		}
    	}
-
-   	// if(strstr(ts, ps)) {
-   	// 	printf("\nSearch of length %d\n", k);
-
-	   // 	for(i=0; i<k;i++) {
-	   // 		printf("%c",ps[i]);
-	   // 	}
-
-	   // 	printf("\n");
-
-	   // 	for (i=j=0; i < n; i++) {
-	   // 		// printf("%c", ts[i]);
-	   // 	}
-
-	   // 	// return 1;
-   	// }
-
 	return 0;
 }
 
