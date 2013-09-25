@@ -120,7 +120,7 @@ normalize(unsigned char *buf,	/* The character array contains the string to be n
     	if (isupper(buf[i])) {
     		buf[j++] = tolower(buf[i]);
     	} else if(isspace(buf[i])) {
-    		// only insert if not at beginning or end; and not consutive
+    		// only insert if not at beginning or end; and not consecutive
     		if ((i > 0) && (i < (len-1)) && !isspace(buf[i-1])) {
     			buf[j++] = ' ';
     		}
@@ -205,9 +205,59 @@ rabin_karp_match(const unsigned char *ps,	/* the query string */
 								 const unsigned char *ts,	/* the document string (Y) */ 
 								 int n						/* the length of the document Y */ )
 {
-	
-    /* Your code here */
-	return 0;
+	int i, j, printed;
+	int response = 0;
+	long long base = 256;
+	long long base_exp = 1;
+	long long ps_hash = 0;
+	long long ts_hash = 0;
+
+	// get base^(k-1)
+	for (i = 0; i < k - 1; i++) {
+		base_exp = mmul(base, base_exp);
+	}
+
+	// create initial hashes
+	for (i = 0; i < k; i++) {
+		ps_hash = madd(mmul(base, ps_hash), ps[i]);
+		ts_hash = madd(mmul(base, ts_hash), ts[i]);
+	}
+	printf("%llu\n", ps_hash);
+
+	// build the rest of the hashes
+	for (i=printed=0; i < n - k; i++) {
+		// print off the first PRINT_RK_HASH
+		if (printed < PRINT_RK_HASH) {
+			printf("%llu ", ts_hash);
+			printed++;
+		} else if(printed == PRINT_RK_HASH) {
+			printf("\n");
+			printed++;
+		}
+
+		// if we have a match, let's be sure
+		if (ts_hash == ps_hash) {
+			for (j = 0; j < k; j++) {
+				if (ts[i + j] != ps[j]) {
+					break;
+				}
+			}
+			if (j == k) {
+				 response = 1;
+			}
+		}
+		else {
+			// first remove last digit
+			ts_hash = mmul(base, mdel(ts_hash, mmul(ts[i], base_exp)));
+			// then add first digit
+			ts_hash = madd(ts_hash, ts[i + k]);
+			// keep it positive
+			while (ts_hash < 0) {
+				ts_hash = ts_hash + BIG_PRIME;
+			}
+		}
+	}
+	return response;
 }
 
 
@@ -245,7 +295,7 @@ rabin_karp_batchmatch(int bsz, /* size of bitmap (in bits) to be used */
     int n 					/* to-be-matched document length*/)
 {
 
-    /* Your code here */
+    /* nothing in the instructions talks about a bloom filter or bitmap... are we meant to do do this??? */
     return 0;
 }
 
