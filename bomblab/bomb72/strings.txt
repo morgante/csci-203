@@ -1,0 +1,437 @@
+/lib/ld-linux.so.2
+__gmon_start__
+libc.so.6
+_IO_stdin_used
+socket
+fflush
+strcpy
+exit
+sprintf
+fopen
+connect
+signal
+puts
+stdin
+fgets
+memset
+__errno_location
+read
+stdout
+memcpy
+__strtol_internal
+getenv
+__ctype_b_loc
+sscanf
+stderr
+alarm
+gethostbyname
+bcopy
+close
+fprintf
+sleep
+__libc_start_main
+write
+GLIBC_2.1
+GLIBC_2.3
+GLIBC_2.0
+PTRh
+QVh$
+<[^_]
+0[^]
+[^_]
+***t
+runc
+ated
+B***
+Erro
+r: C
+lien
+Gt un
+able
+ to 
+crea
+te s
+G ockef
+Erro
+r: D
+NS i
+Gs un
+able
+ to 
+reso
+lve 
+G serv
+G$er a
+G(ddref
+G,ss
+[^_]
+,[^_]
+Erro
+r: C
+lien
+@t un
+able
+ to 
+crea
+te s
+@ ockef
+Erro
+r: D
+NS i
+As un
+able
+ to 
+reso
+lve 
+A serv
+A$er a
+A(ddref
+A,ss
+Erro
+r: U
+nabl
+Ae to
+ con
+nect
+ to 
+the 
+A servf
+A$er
+Erro
+r: R
+esul
+@t st
+ring
+ too
+ lar
+ge. 
+@ Incr
+@$ease
+@( SUB
+@,MITR
+@0_MAX
+@4BUF
+Erro
+r: C
+lien
+Ct un
+able
+ to 
+writ
+e to
+C  the
+C$ ser
+C(ver
+Erro
+r: C
+lien
+Ct un
+able
+ to 
+read
+ fir
+C st h
+C$eade
+C(r fr
+C,om s
+C0ervef
+Erro
+r: C
+lien
+@t un
+able
+ to 
+read
+ sta
+@ tus 
+@$mess
+@(age 
+@,from
+@0 ser
+@4ver
+Erro
+r: C
+lien
+At un
+able
+ to 
+read
+ hea
+A ders
+A$ fro
+A(m se
+A,rver
+[^_]
+[^_]
+%s: Error: Couldn't open %s
+Usage: %s [<input_file>]
+That's number 2.  Keep going!
+Halfway there!
+Good work!  On to the next...
+Welcome to my fiendish little bomb. You have 6 phases with
+which to blow yourself up. Have a nice day!
+Phase 1 defused. How about the next one?
+So you got that one.  Try this one.
+Wow! You've defused the secret stage!
+The moon unit will be divided into two divisions.
+flames
+%d %c %d
+maduiersnfotvbylInvalid phase%s
+defused
+exploded
+%d:%s:%d:%s
+%d %d %s
+DrEvil
+BOOM!!!
+The bomb has blown up.
+%d %d %d %d %d %d
+Error: Premature EOF on stdin
+GRADE_BOMB
+Error: Input line too long
+Initialization error:
+Well...
+OK. :-)
+greatwhite.ics.cs.cmu.edu
+angelshark.ics.cs.cmu.edu
+makoshark.ics.cs.cmu.edu
+ERROR: Input string is too large.
+Curses, you've found the secret phase!
+But finding it and solving it are quite different...
+Congratulations! You've defused the bomb!
+Your instructor has been notified and will verify your solution.
+Your instructor has been notified.
+So you think you can stop the bomb with ctrl-c, do you?
+linserv1.cims.nyu.edu
+%%%02X
+%s %d %[a-zA-z ]
+AUTORESULT_STRING=%s
+csapp
+Error: Unable to connect to server %s
+Error: Result string contains an illegal or unprintable character.
+Error: HTTP request failed with error %d: %s
+GET /%s/submitr.pl/?userid=%s&lab=%s&result=%s&submit=submit HTTP/1.0
+Program timed out after %d seconds
+mp3255
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-52)
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-52)
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-51)
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-51)
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-51)
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-51)
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-51)
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-51)
+GCC: (GNU) 4.1.2 20080704 (Red Hat 4.1.2-52)
+main
+infile
+?<
+/usr/include
+/usr/include/bits
+/usr/lib/gcc/x86_64-redhat-linux/4.1.2/include
+bomb.c
+stdio.h
+libio.h
+types.h
+stddef.h
+__off_t
+_IO_read_ptr
+_chain
+size_t
+_shortbuf
+_IO_buf_base
+long long unsigned int
+stdout
+long long int
+_fileno
+_IO_read_end
+__quad_t
+_flags
+_IO_buf_end
+_cur_column
+main
+__pad4
+_IO_marker
+stdin
+_IO_write_ptr
+_sbuf
+short unsigned int
+infile
+_lock
+_flags2
+_mode
+_IO_save_base
+_IO_write_end
+_IO_lock_t
+_IO_FILE
+_pos
+_old_offset
+_markers
+unsigned char
+short int
+_vtable_offset
+bomb.c
+input
+/home/mzahran/corg/bomblab/src
+_next
+__off64_t
+_IO_read_base
+_IO_save_end
+__pad1
+__pad2
+__pad3
+__pad5
+_unused2
+argv
+_IO_backup_base
+argc
+GNU C 4.1.2 20080704 (Red Hat 4.1.2-51)
+_IO_write_base
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.ctors
+.dtors
+.jcr
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment
+.debug_aranges
+.debug_pubnames
+.debug_info
+.debug_abbrev
+.debug_line
+.debug_frame
+.debug_str
+.debug_loc
+call_gmon_start
+crtstuff.c
+__CTOR_LIST__
+__DTOR_LIST__
+__JCR_LIST__
+dtor_idx.5808
+completed.5806
+__do_global_dtors_aux
+frame_dummy
+__CTOR_END__
+__FRAME_END__
+__JCR_END__
+__do_global_ctors_aux
+bomb.c
+phases.c
+array.2970
+support.c
+sig_handler
+driverlib.c
+rio_readlineb
+__preinit_array_start
+__fini_array_end
+_GLOBAL_OFFSET_TABLE_
+__preinit_array_end
+__fini_array_start
+__init_array_end
+__init_array_start
+_DYNAMIC
+data_start
+__errno_location@@GLIBC_2.0
+driver_post
+sprintf@@GLIBC_2.0
+connect@@GLIBC_2.0
+__libc_csu_fini
+_start
+initialize_bomb_solve
+signal@@GLIBC_2.0
+__gmon_start__
+_Jv_RegisterClasses
+_fp_hw
+read_six_numbers
+getenv@@GLIBC_2.0
+bomb_id
+_fini
+strings_not_equal
+write@@GLIBC_2.0
+phase_6
+fgets@@GLIBC_2.0
+memset@@GLIBC_2.0
+phase_2
+node3
+__strtol_internal@@GLIBC_2.0
+__libc_start_main@@GLIBC_2.0
+read@@GLIBC_2.0
+_IO_stdin_used
+userid
+__data_start
+fflush@@GLIBC_2.0
+fun7
+secret_phase
+socket@@GLIBC_2.0
+__ctype_b_loc@@GLIBC_2.3
+bcopy@@GLIBC_2.0
+explode_bomb
+stderr@@GLIBC_2.0
+memcpy@@GLIBC_2.0
+phase_3
+node2
+read_line
+fopen@@GLIBC_2.1
+alarm@@GLIBC_2.0
+__dso_handle
+init_timeout
+strcpy@@GLIBC_2.0
+__DTOR_END__
+__libc_csu_init
+input_strings
+printf@@GLIBC_2.0
+node6
+initialize_bomb
+phase_defused
+blank_line
+skip
+close@@GLIBC_2.0
+host_table
+fprintf@@GLIBC_2.0
+infile
+__bss_start
+send_msg
+phase_4
+scratch
+num_input_strings
+stdin@@GLIBC_2.0
+invalid_phase
+sleep@@GLIBC_2.0
+node1
+_end
+stdout@@GLIBC_2.0
+puts@@GLIBC_2.0
+init_driver
+node5
+sigalrm_handler
+sscanf@@GLIBC_2.0
+_edata
+phase_5
+gethostbyname@@GLIBC_2.0
+string_length
+exit@@GLIBC_2.0
+submitr
+__i686.get_pc_thunk.bx
+func4
+node4
+main
+_init
+phase_1
